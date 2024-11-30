@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: Righteous;
+    src: url(../fonts/Righteous/Righteous-Regular.ttf);
+}
+@font-face {
+    font-family: PTSans;
+    src: url(../fonts/PT_Sans_Caption/PTSansCaption-Bold.ttf);
+}
+*{
+    font-family: PTSans;
+}
+
+
+html{
+    background-color: #F7ECDE;
+}
+#containerbody{
+    background-color: #F7ECDE;
+}
+
+
+h1{
+    font-family: Pacifico;
+    font-size: 50px;
+    position: relative;
+    z-index: 0;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    background-color: #FFC260;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s all;
+}
+h1:hover::after{
+    height: 65%;
+}
+.h11{
+    height: 200px;
+    border: 2px dotted black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+
+
+h2{
+    font-family: Righteous;
+    font-size: 24px;
+    background-image: linear-gradient(90deg, #3FA55B, #B4AC49);
+    background-clip: text;
+    color: transparent;
+}
+.inputcon{
+    border: 2px dotted black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+
+tr{
+    border: 1px solid rgb(222, 222, 222);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+td{
+    text-align: center;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem #f9b64a91;
+}
+
+#submit , #updatebtn{
+    width: 150px;
+}

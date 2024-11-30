@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<div class="container-fluid" id="containerbody">
+<div class="container">
+        
+        <div class="h11 mb-4 d-flex justify-content-center align-items-center">
+            <h1 class="position-relative">Bookmarker</h1>
+        </div>
+
+        <div class="inputcon container-fluid mb-4">
+
+            <h2 class="text-center">
+            <i class="fa-solid fa-bookmark"></i>
+             Bookmark your favorite sites 
+            <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+
+            <div class="mb-3 pb-2">
+                <label for="exampleFormControlInput1" class="form-label">      <i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Boolmark Name">
+            </div>
+            <div id="namealert" class="alert alert-warning text-center py-2 w-25 d-none">site is exist</div>
+            <div id="emptyerror" class="alert alert-danger text-center py-2 w-25 d-none">please fill Site Name</div>
+            <div id="nameerror" class="alert alert-warning text-center py-2 w-25 d-none">Name must be 2-15 char long, and start with Uppercase</div>
+
+
+            <div class="mb-3 pb-3">
+                <label for="exampleFormControlInput1" class="form-label">      <i class="fa-solid fa-link"></i> Site URL</label>
+                <input id="url" type="text" class="form-control" placeholder="https://example.com">
+            </div>
+            <div id="urlerror" class="alert alert-warning text-center py-2 w-25 d-none">https://example.com</div>
+
+
+
+            <div class="d-flex justify-content-center mb-4">
+                <button id="submit" type="button" class="btn btn-danger justify-content-center d-flex">Submit</button>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <button id="updatebtn" type="button" class="btn btn-warning justify-content-center d-none">Update</button>
+            </div>
+            
+
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="mb-3 pb-3">
+                <label for="exampleFormControlInput1" class="form-label">      <i class="fa-solid fa-magnifying-glass"></i> Search</label>
+                <input id="search" type="search" class="form-control" placeholder="Search">
+            </div>
+        
+
+            <table id="table" class="table-light w-100 bg-light">
+
+                <thead>
+                    <tr>
+                    <td>index</td> 
+                    <td>Website Name</td> 
+                    <td>Visit</td> 
+                    <td>Delete</td> 
+                    <td>Update</td> 
+                    </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>
+                
+            </table>
+
+        </div>
+        
+
+
+
+
+
+    </div>
+</div>
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
